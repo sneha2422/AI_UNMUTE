@@ -25,6 +25,7 @@ export default function TeacherPage() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [teacherName, setTeacherName] = useState('');
   const [savedMsg, setSavedMsg] = useState('');
+  const [isBrowserSupported, setIsBrowserSupported] = useState(true);
 
   const { transcript, isListening, fullNotes, startListening, stopListening } = useSpeechCaption();
   const { isOnline } = useOfflineSync();
@@ -51,6 +52,12 @@ export default function TeacherPage() {
     });
     return unsub;
   }, [sessionActive, sessionId]);
+
+  // Check for Web Speech API support on mount
+  useEffect(() => {
+    const supported = 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window;
+    setIsBrowserSupported(supported);
+  }, []);
 
   const startSession = () => {
     setSessionActive(true);
@@ -81,6 +88,21 @@ export default function TeacherPage() {
 
   return (
     <div className="min-h-screen bg-[#0f0f1a]">
+      {!isBrowserSupported && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" aria-modal="true" role="dialog">
+          <div className="bg-gray-900 border border-yellow-600 rounded-2xl max-w-lg w-full p-8 text-center">
+            <h2 className="text-2xl font-bold text-yellow-300 mb-3">Browser Not Supported</h2>
+            <p className="text-gray-300">
+              The live captioning feature uses the Web Speech API, which is not available in your current browser.
+            </p>
+            <p className="text-gray-300 mt-4">
+              For this feature to work, please use the latest version of{' '}
+              <strong className="text-white">Google Chrome</strong> on a desktop computer.
+            </p>
+          </div>
+        </div>
+      )}
+
       <TeacherNav />
 
       <div className="max-w-5xl mx-auto px-4 py-8">
@@ -149,7 +171,9 @@ export default function TeacherPage() {
               {transcript ? (
                 <p className="text-white text-lg">{transcript}</p>
               ) : (
-                <p className="text-gray-600">{sessionActive ? 'Speak into your microphone…' : 'Start class to begin'}</p>
+                <p className="text-gray-500">
+                  {sessionActive ? 'Speak into your microphone…' : 'Press "Start Class" to begin captioning.'}
+                </p>
               )}
             </div>
 
