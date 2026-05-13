@@ -1,11 +1,44 @@
-<<<<<<< HEAD
 # 🔇→🔊 UNMUTE — AI Accessibility Platform
 
 **Real-time speech-to-text captioning, sign language detection, and learning analytics for inclusive classrooms.**
 
+**LIVE DEMO : https://github.com/sneha2422/AI_UNMUTE**
+
 Team INSYNC · HopeWorks × AI4India Hackathon
 
 ---
+
+# UNMUTE — AI-Powered Real-Time Accessibility Communication System
+
+UNMUTE is an AI-powered Progressive Web App designed to reduce communication barriers for students with hearing and speech disabilities in classroom environments.
+
+The system provides real-time speech-to-text captioning, student-to-teacher communication, basic sign-language gesture recognition, auto-generated lecture notes, quiz support, learning analytics, and offline-first functionality. It is built as a web-based prototype that can run on laptops, tablets, and mobile devices.
+
+## Key Features
+
+- Real-time speech-to-text classroom captions
+- Teacher dashboard for live sessions
+- Student interface for captions and questions
+- Student Q&A system
+- Basic sign-language gesture recognition
+- Auto-generated lecture notes
+- Quiz module for learning review
+- Analytics dashboard for engagement tracking
+- Offline-first PWA support
+- Firebase integration for real-time data sync
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Firebase
+- Firestore
+- TensorFlow.js
+- MediaPipe Hands
+- IndexedDB
+- PWA Service Worker
 
 ## 🚀 Quick Start (5 Steps)
 
@@ -127,41 +160,6 @@ src/
 
 ---
 
-*UNMUTE — Giving every student a voice in the classroom.*
-=======
-# UNMUTE — AI-Powered Real-Time Accessibility Communication System
-
-UNMUTE is an AI-powered Progressive Web App designed to reduce communication barriers for students with hearing and speech disabilities in classroom environments.
-
-The system provides real-time speech-to-text captioning, student-to-teacher communication, basic sign-language gesture recognition, auto-generated lecture notes, quiz support, learning analytics, and offline-first functionality. It is built as a web-based prototype that can run on laptops, tablets, and mobile devices.
-
-## Key Features
-
-- Real-time speech-to-text classroom captions
-- Teacher dashboard for live sessions
-- Student interface for captions and questions
-- Student Q&A system
-- Basic sign-language gesture recognition
-- Auto-generated lecture notes
-- Quiz module for learning review
-- Analytics dashboard for engagement tracking
-- Offline-first PWA support
-- Firebase integration for real-time data sync
-
-## Tech Stack
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Firebase
-- Firestore
-- TensorFlow.js
-- MediaPipe Hands
-- IndexedDB
-- PWA Service Worker
-
 ## Project Goal
 
 The goal of UNMUTE is to make classroom communication more accessible, inclusive, and affordable by using AI-powered tools that help students participate actively without depending fully on human interpreters.
->>>>>>> 28a7a86848e26b63772c22732ee629fa01451bcd
