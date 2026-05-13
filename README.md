@@ -1,4 +1,4 @@
-# 🔇→🔊 UNMUTE — AI Accessibility Platform
+# UNMUTE — AI-Powered Real-Time Accessibility Communication System
 
 **Real-time speech-to-text captioning, sign language detection, and learning analytics for inclusive classrooms.**
 
@@ -7,8 +7,6 @@
 Team INSYNC · HopeWorks × AI4India Hackathon
 
 ---
-
-# UNMUTE — AI-Powered Real-Time Accessibility Communication System
 
 UNMUTE is an AI-powered Progressive Web App designed to reduce communication barriers for students with hearing and speech disabilities in classroom environments.
 
