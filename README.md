@@ -2,7 +2,7 @@
 
 **Real-time speech-to-text captioning, sign language detection, and learning analytics for inclusive classrooms.**
 
-**LIVE DEMO : ai-unmute.vercel.app**
+**LIVE DEMO : https://ai-unmute.vercel.app/**
 
 Team INSYNC · HopeWorks × AI4India Hackathon
 
